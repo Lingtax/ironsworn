@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ironsworn
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ironsworn is to provide tools for implementing the ironsworn RPG system in notebook format, including all rolls. 
+
+
+You can install the development version of this package from [GitHub](https://github.com/Lingtax/ironsworn) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Lingtax/ironsworn")
+```
+## Example of use
+
+To be developed later...
+
+```{r example}
+library(ironsworn)
+set.seed(20190930)
+## basic example code
+roll_action(1)
+oracle_settlement_name()
+```
+
+This work is based on Ironsworn (found at www.ironswornrpg.com), created by Shawn Tomkin, and licensed for our use under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/).
