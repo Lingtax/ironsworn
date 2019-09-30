@@ -16,7 +16,7 @@ oracle_location <- function() {
 
 oracle_settlement_name <- function(quick = TRUE) {
   if (quick == TRUE){
-    pick <- sample(1:100, 2)
+    pick <- sample(1:100, 2, replace = TRUE)
     cat(o_quick_settlement_name[pick[1], 2],  o_quick_settlement_name[pick[2], 3], " (Rolls: ", pick[1], ", ", pick[2], ")", sep="") 
   }
   
