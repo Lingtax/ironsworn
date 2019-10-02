@@ -18,6 +18,12 @@ oracle_location <- function() {
   cat(o_location[roll, 2], " (Roll: ", roll, ")", sep = "")
 }
 
+oracle_location_descriptor <- function() {
+  roll <-  sample(1:100, 1)
+  cat(o_location_descriptor[roll, 2], " (Roll: ", roll, ")", sep = "")
+}
+
+
 oracle_combat_actions <- function() {
   roll <-  sample(1:100, 1)
   cat(o_combat_actions[roll, 2], " (Roll: ", roll, ")", sep = "")
@@ -48,6 +54,13 @@ oracle_plot_twist <- function() {
   
 }
 
+oracle_coastal_waters <-  function() {
+  
+  roll <-  sample(1:100, 1)
+  cat(o_coastal_waters[roll, 2], " (Roll: ", roll, ")", sep = "")
+  
+}
+
 
 oracle_settlement_name <- function(quick = TRUE) {
   if (quick == TRUE){
@@ -56,3 +69,5 @@ oracle_settlement_name <- function(quick = TRUE) {
   }
   
 }
+
+
